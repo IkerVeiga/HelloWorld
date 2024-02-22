@@ -10,6 +10,7 @@ public class HelloWorld : MonoBehaviour
     {
         enemy = new Enemy("Voldemort");
         player = new Player("Harry Potter");
+        Debug.Log("Hello World");
     }
 
 
