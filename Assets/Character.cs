@@ -6,7 +6,7 @@ public class Character
 {
     
    public string name;
-   private int healthPoints = 1;
+   private int healthPoints = 10;
    public Character(string name)
        {
            this.name = name;
