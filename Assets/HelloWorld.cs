@@ -17,7 +17,8 @@ public class HelloWorld : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("Nombre: " + enemy.name + ". Vida: " + enemy.getHealthPoints());
-        Debug.Log("Nombre: " + player.name + ". Vida: " + player.getHealthPoints());
+        Debug.Log("Nombre: " + enemy.name + ". Vida: " + enemy.HealthPoints);
+        Debug.Log("Nombre: " + player.name + ". Vida: " + player.HealthPoints);
+        enemy.takeDamage();
     }
 }
