@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Character
+public abstract class Character
 {
     
    public string name;
@@ -19,9 +19,7 @@ public class Character
 
     public int HealthPoints { get => healthPoints; set => healthPoints = value; }
 
-    public void takeDamage()
-    {
-        this.healthPoints -= 1;
-    }
+    public abstract void takeDamage();
+
     
 }

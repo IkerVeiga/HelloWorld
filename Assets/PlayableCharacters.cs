@@ -10,13 +10,23 @@ public class Player : Character
 
     }
 
+    public override void takeDamage()
+    {
+        this.HealthPoints -= 0;
+    }
+
 }
 
 public class Enemy : Character
 {
     public Enemy(string name) : base(name)
     {
+ 
+    }
 
+    public override void takeDamage()
+    {
+        this.HealthPoints -= 1;
     }
 
 }

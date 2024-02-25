@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class HelloWorld : MonoBehaviour
@@ -19,6 +20,19 @@ public class HelloWorld : MonoBehaviour
     {
         Debug.Log("Nombre: " + enemy.name + ". Vida: " + enemy.HealthPoints);
         Debug.Log("Nombre: " + player.name + ". Vida: " + player.HealthPoints);
-        enemy.takeDamage();
+        if (player.HealthPoints != 0)
+        {
+            player.takeDamage();
+        }
+
+        if(enemy.HealthPoints != 0)
+        {
+            enemy.takeDamage();
+        }
+        else
+        {
+            Debug.Log(enemy.name + " ha muerto.");
+        }
+
     }
 }
