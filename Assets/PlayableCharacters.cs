@@ -12,7 +12,7 @@ public class Player : Character
 
     public override void takeDamage()
     {
-        this.HealthPoints -= 0;
+        
     }
 
 }
