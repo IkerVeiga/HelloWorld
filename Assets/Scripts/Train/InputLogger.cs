@@ -16,7 +16,7 @@ public class InputLogger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    //    DestroyGameObjects();
+        DestroyGameObjects();
     }
 
     private void DestroyGameObjects()
