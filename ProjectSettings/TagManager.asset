@@ -10,6 +10,8 @@ TagManager:
   - LowerBody
   - UpperBody
   - Chimney
+  - BagonLinker
+  - Bagon
   layers:
   - Default
   - TransparentFX
