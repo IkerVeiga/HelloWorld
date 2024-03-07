@@ -6,7 +6,7 @@ using UnityEngine;
 public class InputLogger : MonoBehaviour
 {
     public Object[] allTheGameObjects;
-    public int cont = 1;
+    public int cont = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,8 +24,8 @@ public class InputLogger : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Espacio pulsado");
-            //Destroy(allTheGameObjects[cont]);
-            //cont++;
+           //Destroy(allTheGameObjects[cont]);
+           //cont++;
 
         }
     }
